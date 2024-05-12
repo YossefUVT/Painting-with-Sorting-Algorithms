@@ -173,6 +173,7 @@ int main(int argc, char* argv[]) {
     SDL_RenderPresent(renderer);
     
     std::cout << "Press 'Enter' while in the render window to Exit:";
+    key_pressed = false;
     while (!key_pressed) {
         while (SDL_PollEvent(&event)) {
             if (event.type == SDL_QUIT) {
