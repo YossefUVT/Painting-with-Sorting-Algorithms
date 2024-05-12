@@ -3,7 +3,7 @@
 This is a quick program I made using the SDL2 Library & C++ in order to visualize Sorting Methods in action by rendering each correctly placed pixel in an array from a reference image.
 
 ## Compilers
-
+List of commands to compile the `C++` files: 
 ```
 g++ quicksort.cpp -o quicksort.exe -Iinc -Llib -lSDL2 -lopengl32
 g++ mergesort.cpp -o mergesort.exe -Iinc -Llib -lSDL2 -lopengl32
