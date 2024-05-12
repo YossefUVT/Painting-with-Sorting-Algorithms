@@ -6,29 +6,13 @@ This is a quick program I made using the SDL2 Library & C++ in order to visualiz
 
 ```
 g++ quicksort.cpp -o quicksort.exe -Iinc -Llib -lSDL2 -lopengl32
-```
-```
 g++ mergesort.cpp -o mergesort.exe -Iinc -Llib -lSDL2 -lopengl32
-```
-```
 g++ bubblesort.cpp -o bubblesort.exe -Iinc -Llib -lSDL2 -lopengl32
-```
-```
 g++ insertionsort.cpp -o insertionsort.exe -Iinc -Llib -lSDL2 -lopengl32
-```
-```
 g++ selectionsort.cpp -o selectionsort.exe -Iinc -Llib -lSDL2 -lopengl32
-```
-```
 g++ countingsort.cpp -o countingsort.exe -Iinc -Llib -lSDL2 -lopengl32
-```
-```
 g++ shakersort.cpp -o shakersort.exe -Iinc -Llib -lSDL2 -lopengl32
-```
-```
 g++ radixsort.cpp -o radixsort.exe -Iinc -Llib -lSDL2 -lopengl32
-```
-```
 g++ bogosort.cpp -o bogosort.exe -Iinc -Llib -lSDL2 -lopengl32
 ```
 
