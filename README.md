@@ -19,7 +19,7 @@ g++ bogosort.cpp -o bogosort.exe -Iinc -Llib -lSDL2 -lopengl32
 ## Instructions
 
 When you compile them, open the executables and press Enter once the array is ready to be sorted. Once the executable finishes sorting the list, an image will be fully rendered, and a the console will log the time elapsed for the array to be sorted.
-To change the number of arrays being sorted, replace 'image.bmp' with a copy of an image of your choice with a .bmp format, make sure to rename it 'image.bmp'.
+To change the number of elements being sorted, replace 'image.bmp' with a copy of an image of your choice with a .bmp format, make sure to rename it 'image.bmp', the number of elements being sorted will be the $Width$ x $Height$ of the image.
 
 ### Yapping
 This was made for the purpose of writing a paper regarding sorting algorithms for my Computer Science course, I ${\color{red}LOVE}$ Methods and Practices in Informatics!
