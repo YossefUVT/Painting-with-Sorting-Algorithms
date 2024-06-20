@@ -31,13 +31,13 @@ void counting_sort(int arr[], int n, int exp) {
     for (int i = 1; i < 10; ++i)
         count[i] += count[i - 1];
 
-    for (int i = n - 1; i >= 0; --i) {
-        output[count[(arr[i] / exp) % 10] - 1] = arr[i];
-        --count[(arr[i] / exp) % 10];
-    }
+    for (int i = 0; i < n; i++)
+        output[i] = arr[i];
 
-    for (int i = 0; i < n; ++i)
-        arr[i] = output[i];
+    for (int i = n - 1; i >= 0; --i) {
+        arr[count[(output[i] / exp) % 10] - 1] = output[i];
+        --count[(output[i] / exp) % 10];
+    }
 }
 
 void radix_sort(int arr[], int n) {
