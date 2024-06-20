@@ -21,6 +21,12 @@ struct SortArgs {
     int pixels;
 };
 
+void swap_arrays(int*& arr, int*& sorted_arr) {
+    int* temp = arr;
+    arr = sorted_arr;
+    sorted_arr = temp;
+}
+
 void sort_algorithm(int arr[], int pixels) {
     int max_element = *std::max_element(arr, arr + pixels);
     std::vector<int> count(max_element + 1, 0);
@@ -32,13 +38,13 @@ void sort_algorithm(int arr[], int pixels) {
         count[i] += count[i - 1];
 
     std::vector<int> sorted_arr(pixels);
-    for (int i = pixels - 1; i >= 0; i--) {
-        sorted_arr[count[arr[i]] - 1] = arr[i];
-        count[arr[i]]--;
-    }
-
     for (int i = 0; i < pixels; i++)
-        arr[i] = sorted_arr[i];
+        sorted_arr[i] = arr[i];
+
+    for (int i = pixels - 1; i >= 0; i--) {
+        arr[count[sorted_arr[i]] - 1] = sorted_arr[i];
+        count[sorted_arr[i]]--;
+    }
 }
 
 int sort(void* args) {
